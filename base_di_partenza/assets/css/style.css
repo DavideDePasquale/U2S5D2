@@ -113,6 +113,14 @@ section h2 {
   background-color: #a3a3a3;
   padding: 0px 1em;
 }
+.img {
+  display:inline-block;
+}
+.imgp p {
+  display:inline-block;
+  max-width:81%;
+}
+
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
@@ -152,7 +160,7 @@ h1 + p {
 
 @media screen and (min-width: 500px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   p,
@@ -386,3 +394,51 @@ footer a {
     display: none;
   }
 }
+@media screen and (min-width:500px) {
+  article img:nth-child(2) {
+  position: relative;
+  top: -43px;
+ 
+  }
+  article h1{
+    font-size:43px;
+  }
+  body {
+    position: relative;
+    z-index: 0;
+  }
+  header {
+    position: sticky;
+    z-index:5;
+    top: 20px;
+  }
+ .grey { 
+  color:grey;
+ }
+ section {
+  position:relative;
+ }
+ section h2 {
+  position:absolute;
+  top:-20px;
+  text-transform: uppercase;
+  border:solid 0.2px;
+  padding-inline: 30px;
+  padding-block: 2px;
+
+ }
+ .iconcine {
+  height:30px;
+  width:30px;
+  border:solid 0.01px white;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: white;
+ }
+
+
+  }
+
+
+
+
