@@ -409,7 +409,7 @@ footer a {
   }
   header {
     position: sticky;
-    z-index:5;
+    z-index:0;
     top: 20px;
   }
  .grey { 
@@ -417,6 +417,7 @@ footer a {
  }
  section {
   position:relative;
+  z-index:1;
  }
  section h2 {
   position:absolute;
@@ -427,17 +428,39 @@ footer a {
   padding-block: 2px;
 
  }
+ footer {
+  position: relative;
+}
+ 
  .iconcine {
-  height:30px;
-  width:30px;
-  border:solid 0.01px white;
-  margin-bottom: 40px;
+  height: 35px;
+  width: 35px;
+  border: solid 0.1px rgb(148, 140, 140);
+  margin-bottom: 50px;
   text-align: center;
   background-color: white;
+  color: #0d3488;
  }
+ .fas.fa-sort-up {
+  color: rgb(219, 29, 29);
+}
+.tutteicon {
+  position: fixed;
+  right: 4px;
+  bottom: 0;
 
+}
 
+}
+@media screen and (min-width:768px) {
+  .primeDue {
+    position:fixed;
+    top:20px;
+    right:4px;
   }
+  
+}
+  
 
 
 
